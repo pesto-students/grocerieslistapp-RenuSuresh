@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery List App</title>
+    <script type="text/javascript" src="./src/itemList.js" ></script>
+    <link rel="stylesheet" href="style/index.css">
+</head>
+<body onload="getGroceryList()">
+    
+    <div style="display: block;">
+        <h1 class="app-title">Grocery App</h1>
+        <div id="username" class="logout" style="display: flex;">
+        <button onclick="logout()">Save and exit</button>
+    </div>
+        <div style="margin-bottom: 25px;">
+            <input type="text" placeholder="Enter Item" id="item" >
+            <button type="submit" onclick="addItem()" class="add">+</button>
+        </div>
+    <div id="groceryList" >
+        <ul id="list">
+            
+        </ul>
+    </div>
+    <div id="divEdit" class="modal">
+        <div class="modal-content" id="contentId">
+            <label id="labelChange"></label>
+            <input type="text" id="editItem">
+            <button id="confirmEdit">ok</button>
+        </div>
+    </div>
+    <div  id='showError' class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>
+                Cannot enter more than 5 item in list.
+            </p>
+        </div>
+    </div>
+    <div  id='showSessionError' class="modal">
+        <div class="modal-content">
+            <span class="closeSession">&times;</span>
+            <p>
+                Please login.
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
