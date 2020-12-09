@@ -8,7 +8,9 @@ const login = () => {
     const userData = JSON.parse(localStorage.getItem('userData'));
     const user = document.getElementById('name').value;
     const password = document.getElementById('password').value;
-    if (!userData) {
+    const userInfo = userData.filter(element => element.name == user)
+    
+    if (!userData || userInfo[0] == undefined) {
         let modal = document.getElementById("showLoginError");
         let span = document.getElementsByClassName("closeLogin")[0];
         let name = document.getElementById('name');

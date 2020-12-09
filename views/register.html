@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grocery List App</title>
-    <script src="src/index.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="style/index.css">
+    <script src="../src/register.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="../style/index.css">
 </head>
 
 <body>
     <div class="select-member">
         <h2 class="app-title">Grocery App</h2>
+        <h5 class="app-login-register">Register</h5>
+
         <div class="border-div">
             <input type="text" id="name" placeholder="Name">
             <br>
@@ -24,19 +26,12 @@
     <div  id='showError' class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <p>
-               Sorry! we cannot have more than 3 users.
+            <p id="error">
+              
             </p>
         </div>
     </div>
-    <div  id='showNoInputError' class="modal">
-        <div class="modal-content">
-            <span class="closeInputModal">&times;</span>
-            <p>
-               Sorry! we cannot have more than 3 users.
-            </p>
-        </div>
-    </div>
+    
 </body>
 
 </html>
