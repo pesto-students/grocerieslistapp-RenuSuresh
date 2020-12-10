@@ -26,6 +26,7 @@ const addItem = () => {
     } else {
         this.errorModal('Only 5 items in list are allowed.')
     }
+    document.getElementById('item').value = '';
 }
 
 function updateUserData() {
