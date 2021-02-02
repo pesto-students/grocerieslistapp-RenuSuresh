@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery List App</title>
+    <script src="../src/register.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="../style/index.css">
+</head>
+
+<body>
+    <div class="select-member">
+        <h2 class="app-title">Grocery App</h2>
+        <h5 class="app-login-register">Register</h5>
+
+        <div class="border-div">
+            <input type="text" id="name" placeholder="Name">
+            <br>
+            <input type="password" id="password" placeholder="Password">
+            <br>
+            <button type="submit" onclick="Registration()" class="reg-btn">Register</button>
+        <a href="./login.html" style="font-size: 15px; float: right;">Login</a>
+
+        </div>
+    </div>
+
+    <div  id='showError' class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="error">
+              
+            </p>
+        </div>
+    </div>
+    
+</body>
+
+</html>
